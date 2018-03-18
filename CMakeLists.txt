@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 3.10)
-project(introasm VERSION 0.1 LANGUAGES ASM-ATT)
-SET(ASM_OPTIONS "--gstabs")
-#SET(CMAKE_ASM_FLAGS "${CFLAGS} ${ASM_OPTIONS}" )
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CONFIGURATION_TYPES "Debug" CACHE STRING "" FORCE)
-add_executable(max maximum.s)
