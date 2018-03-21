@@ -15,8 +15,8 @@ start_loop:
         je loop_exit
         incl %edi
         movl data_items(,%edi,4), %eax
-        cmpl %ebx, %eax
-        jle start_loop
+        cmpl %eax, %ebx
+        jge start_loop
         movl %eax, %ebx
         jmp start_loop
 
